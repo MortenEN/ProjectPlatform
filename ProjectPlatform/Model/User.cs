@@ -19,5 +19,8 @@
             CompletionRateOfProjects = completionRateOfProjects;
             IsCommissioner = isCommissioner;
         }
+
+
+
     }
 }
