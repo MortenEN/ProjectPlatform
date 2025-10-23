@@ -9,7 +9,8 @@
         public DateTime JoinDate { get; set; }
         public double CompletionRateOfProjects { get; set; }
         public bool IsCommissioner { get; set; }
-        public User(int id, string userName, string password, string email, DateTime joinDate, double completionRateOfProjects, bool isCommissioner)
+        public bool IsAdmin { get; }
+        public User(int id, string userName, string password, string email, DateTime joinDate, double completionRateOfProjects, bool isCommissioner, bool isAdmin)
         {
             Id = id;
             UserName = userName;
@@ -18,9 +19,7 @@
             JoinDate = joinDate;
             CompletionRateOfProjects = completionRateOfProjects;
             IsCommissioner = isCommissioner;
+            IsAdmin = isAdmin;
         }
-
-
-
     }
 }
